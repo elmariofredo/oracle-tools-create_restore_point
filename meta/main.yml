@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Mario Vejlupek
+  description: Create Oracle Database Restore Point
+  issue_tracker_url: https://github.com/embedit-ansible/oracle-tools-create_restore_point/issues
+  license: MIT
+  min_ansible_version: 1.2
+  platforms:
+    - name: EL
+      versions:
+        - all
+  galaxy_tags:
+    - oracle
+    - sqlplus
+    - restore point
+dependencies: []
