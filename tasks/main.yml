@@ -1,6 +1,6 @@
 ---
 # tasks file for embedit.oracle-tools-flashback
-- name: Flashback to restore point '{{ restore_point_name }}'
+- name: Create restore point '{{ restore_point_name }}'
   shell: . /etc/bashrc && echo "CREATE RESTORE POINT fresh_installation GUARANTEE FLASHBACK DATABASE;" | sqlplus / as sysdba
   become: true
   become_user: oracle
