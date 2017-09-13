@@ -5,3 +5,5 @@
   become: true
   become_user: oracle
 
+- name: Check if restore point was sucessfuly created
+  shell: . /etc/bashrc && echo "SELECT NAME FROM V$RESTORE_POINT WHERE NAME = '{{ restore_point_name }}';" | sqlplus / as sysdba | grep '{{ restore_point_name }}'

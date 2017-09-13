@@ -8,6 +8,8 @@ Requirements
 
 Ensure that `/etc/profile.d/oracle.sh` is present and is setting all variables correctly and sqlplus command is present in $PATH
 
+Make sure that Media recovery is be enabled by `shutdown immediate;startup mount;ALTER DATABASE ARCHIVELOG;shutdown immediate;startup;`
+
 Role Variables
 --------------
 
